@@ -1,0 +1,63 @@
+{
+  "retrieved_at_utc": "2026-09-06T08:54:01.502273+00:00",
+  "source": "US DOT Bureau of Transportation Statistics, Reporting Carrier On-Time Performance",
+  "selection": {
+    "carrier": "DL",
+    "hub": "ATL",
+    "spokes": [
+      "BOS",
+      "DEN",
+      "LAX",
+      "ORD",
+      "SEA"
+    ],
+    "months": [
+      1,
+      2,
+      3
+    ],
+    "year": 2025
+  },
+  "archives": [
+    {
+      "url": "https://transtats.bts.gov/PREZIP/On_Time_Reporting_Carrier_On_Time_Performance_1987_present_2025_1.zip",
+      "sha256": "868387dcedaef1b8d8392e608e642219fde50d594c3cf2094aec858167629ccf",
+      "bytes": 27108664,
+      "source_rows": 539747,
+      "selected_rows": 2223
+    },
+    {
+      "url": "https://transtats.bts.gov/PREZIP/On_Time_Reporting_Carrier_On_Time_Performance_1987_present_2025_2.zip",
+      "sha256": "12dc8dbdb3c8b3c20d4c00a8b188196ae202f781a8760871ae502a9c733d0ecd",
+      "bytes": 25302583,
+      "source_rows": 504884,
+      "selected_rows": 2002
+    },
+    {
+      "url": "https://transtats.bts.gov/PREZIP/On_Time_Reporting_Carrier_On_Time_Performance_1987_present_2025_3.zip",
+      "sha256": "9c80fbc2112cdbf3f0613ec2001ba019b3ad75511cd69657080736e7eda9cef4",
+      "bytes": 30544825,
+      "source_rows": 600872,
+      "selected_rows": 2376
+    }
+  ],
+  "excluded": {
+    "Schedule clock/elapsed/timezone mismatch": 1
+  },
+  "fields": [
+    "FlightDate",
+    "Reporting_Airline",
+    "Flight_Number_Reporting_Airline",
+    "Origin",
+    "Dest",
+    "CRSDepTime",
+    "CRSArrTime",
+    "CRSElapsedTime",
+    "DepDelay",
+    "ArrDelay",
+    "Cancelled",
+    "Diverted"
+  ],
+  "selected_rows": 6601,
+  "clean_csv_sha256": "b064cb445eddaf9f0b4bb909a34938c302393d94dce64221e219b5d41b83b664"
+}

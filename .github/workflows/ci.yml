@@ -1,0 +1,24 @@
+name: Verify FlightGuard
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: pip install -r requirements.txt
+      - run: npm ci
+      - run: python -m pytest -q
+      - run: node --check web/app.js && npm test
+      - run: python -m flightguard.train --output /tmp/flightguard-retrained
+      - name: Verify deterministic retraining
+        run: python tests/reproduce.py /tmp/flightguard-retrained

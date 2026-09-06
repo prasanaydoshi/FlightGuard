@@ -1,0 +1,7 @@
+{
+  "name": "flightguard-ui-tests",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {"test": "node tests/portable.cjs && node tests/ui.cjs"},
+  "devDependencies": {"jsdom": "26.1.0"}
+}
