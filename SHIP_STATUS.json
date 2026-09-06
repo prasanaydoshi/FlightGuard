@@ -4,8 +4,8 @@
   "github_owner": "prasanaydoshi",
   "intended_repository": "FlightGuard",
   "visibility": "public",
-  "status": "built_verified_awaiting_publication",
-  "shipped": false,
+  "status": "shipped_verified",
+  "shipped": true,
   "started_local_date": "2026-09-06",
   "timezone": "America/Toronto",
   "real_source_flights": 6601,
@@ -19,6 +19,18 @@
   "failure_brier": 0.04491857818285346,
   "layover_baseline_brier": 0.04451430357812897,
   "previous_shipped": "ResearchRadar",
-  "remaining_projects": ["InspectIQ", "ScentCompass", "DiveKit", "PilotDeck"],
-  "completion_rule": "Mark shipped only after GitHub read-back verification. Do not start InspectIQ until this is shipped; at most one completed shipment per Toronto calendar day."
+  "remaining_projects": [
+    "InspectIQ",
+    "ScentCompass",
+    "DiveKit",
+    "PilotDeck"
+  ],
+  "completion_rule": "Mark shipped only after GitHub read-back verification. Do not start InspectIQ until this is shipped; at most one completed shipment per Toronto calendar day.",
+  "shipped_local_date": "2026-09-06",
+  "repository_url": "https://github.com/prasanaydoshi/FlightGuard",
+  "verified_code_commit": "1d90e8a9b11d0367f87b4ccaff6e41778c167b92",
+  "verified_remote_files": 32,
+  "ci_status": "success",
+  "ci_run_url": "https://github.com/prasanaydoshi/FlightGuard/actions/runs/34023888141",
+  "http_assets_verified": 8
 }
